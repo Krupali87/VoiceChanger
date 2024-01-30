@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themecolor">#865ce8</color>
+    <color name="grayText">#99000000</color>
+    <color name="bgUnselected">#f6f6f6</color>
+    <color name="color_9AADB7">#9aadb7</color>
+    <color name="colorOfflineBtn">#ff1313</color>
+    <color name="halfwhite">#33ffffff</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
