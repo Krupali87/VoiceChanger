@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_1">
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="119dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/voice_changer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25sdp" />
+
+            <RelativeLayout
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@+id/text"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/voiceimg" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/icon"
+
+               >
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:layout_margin="10dp"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="125dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/ll_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/recordclr">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/voice_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/record_nvoice"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/ll_open_file"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/changevclr">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/change_voice_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/change_voice"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                       >
+
+                        <RelativeLayout
+                            android:id="@+id/ll_text_audio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/txtclr">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/text_voice_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/text_to_naudio"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/ll_my_voice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/voiceclr">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/my_voice" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/my_nvoice"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+
+</layout>

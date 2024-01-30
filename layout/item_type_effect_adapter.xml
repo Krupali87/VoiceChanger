@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:id="@+id/lnmain"
+    android:layout_width="@dimen/_75sdp"
+    android:layout_height="45dp"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:background="@drawable/seletc_view"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:tag="layout/item_type_effect_adapter_0">
+
+    <TextView
+        android:id="@+id/txtEffectType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/all_effects"
+        android:textColor="@color/grayText"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        android:background="@drawable/bg_selected_tab"
+        android:visibility="gone" />
+</LinearLayout>
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:id="@+id/Relative"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_110sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/unselect_lan">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/ic_hindi"
+        app:shapeAppearanceOverlay="@style/Circular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFlag"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_toStartOf="@+id/imgSelected"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="sfvsdfgvarg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/txtLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:singleLine="true"
+            android:text="sdfffVD"
+            android:textColor="@color/grayText"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSelected"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgUnSelected"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/switchoff"
+        android:visibility="gone" />
+</RelativeLayout>
+</layout>
